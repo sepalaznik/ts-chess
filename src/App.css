@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3 {
+    margin-bottom: 16px;
+    text-align: center;
+}
+.board {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+}
+.cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cell img {
+    width: 56px;
+    height: 56px;
+    position: relative;
+}
+.black {
+    background-color: rgb(118, 118, 248);
+}
+.white {
+    background-color: rgb(236, 203, 172);
+}
+.selected {
+    background-color: rgb(166, 43, 43);
+}
+.available {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color:rgba(0, 128, 0, 0.3);
+}
+.lost {
+    height: calc(50vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
+}
+.timer {
+    padding: 30px;
+    margin-right: 50px;
+}
+.timer h4 {
+    margin-bottom: 30px;
+}
+.timer button {
+    padding: 8px;
+    margin-bottom: 30px;
+}
